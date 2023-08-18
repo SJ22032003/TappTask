@@ -1,0 +1,125 @@
+.wrapper{
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--background-color);
+  display: flex;
+
+}
+
+.mainAccessContainer {
+  max-width: 1920px !important;
+  background-color: var(--box-background-color);
+  border: 2px solid var(--box-border-color);
+  border-radius: 10px;
+  box-shadow: 10px 10px 0 var(--box-border-color);
+  margin: auto;
+  width: clamp(360px, 68.12966vw, 1400px);
+  height: fit-content;
+  padding: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap:20px;
+}
+
+.imageSection,
+.formSection {
+  height: 100%;
+  width: 100%;
+}
+
+.imageSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & > img {
+    width: clamp(300px, 26.041666667vw, 500px);
+    height: clamp(300px, 26.041666667vh, 500px);
+  }
+  @media screen and (max-width: 961px) {
+    display: none;
+  }
+}
+
+.formSection {
+  padding: 2%;
+}
+
+.accessTab {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider {
+  background-color: gray;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  width: 1px;
+  @media screen and (max-width: 961px) {
+    display: none;
+  }
+}
+
+.loginContainer {
+  width: 100%;
+}
+
+.loginFormSection {
+  margin-bottom: 1rem;
+  & > h1 {
+    font: 700 2rem "Manrope";
+    text-align: center;
+  }
+  & > form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap:4px;
+      & > label {
+        font: 500 1.2rem "Manrope";
+      }
+      & > input {
+        height: 40px;
+        border: 2px solid var(--box-border-color);
+        border-radius: 5px;
+        padding: 5px;
+      }
+    };
+    & > button {
+      border: none;
+      padding: 2%;
+      border-radius: 5px;
+      color: #fff;
+      font: 700 0.9rem "Manrope";
+      background-color: var(--box-border-color);
+      cursor: pointer;
+    }
+  }
+}
+
+.changeForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  & > p {
+    font: 400 1rem "Manrope";
+  }
+  & > a {
+    font: 700 1rem "Manrope";
+  }
+  & > a:hover {
+    text-decoration: underline;
+  }
+}
+
+.error {
+  color: red;
+  font: 600 0.8rem "Manrope";
+}

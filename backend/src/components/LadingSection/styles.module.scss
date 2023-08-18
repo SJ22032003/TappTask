@@ -1,0 +1,86 @@
+.mainLadingSection {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1920px !important;
+}
+
+.mainHomeContainer,
+.mainAboutContainer,
+.mainContactContainer {
+  width: clamp(300px, 72.9166vw, 1400px);
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  background-color: var(--box-background-color);
+  padding: 5%;
+  margin: 1rem auto;
+  border-radius: 10px;
+  border: 4px solid var(--box-border-color);
+  box-shadow: 7px 7px 0px var(--box-border-color);
+}
+
+.homeDescription,
+.aboutDescription {
+  & > h1 {
+    font-size: clamp(1.5rem, 3.5vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  & > p {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.homeHeroImg,
+.aboutHeroImg {
+  & > img {
+    width: clamp(150px, 28.014vw, 600px);
+    height: clamp(150px, 28.014vh, 600px);
+    margin: 0 1rem;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.aboutPointsContainer {
+  & > li {
+    font-size: clamp(0.7rem, 2vw, 1.5rem);
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+}
+
+.mainContactContainer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contactBtn {
+  width: clamp(150px, 20.014vw, 300px);
+  color: #fff;
+  background-color: var(--box-border-color);
+  border: 4px solid var(--box-border-color);
+  border-radius: 10px;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-weight: 700;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 7px 7px 0px var(--box-border-color);
+    background-color: var(--box-background-color);
+    color: var(--box-background-color);
+    border: 4px solid var(--box-border-color);
+    color: var(--box-border-color);
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}

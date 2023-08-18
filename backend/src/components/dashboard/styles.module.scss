@@ -1,0 +1,154 @@
+.homeWrapper {
+  min-height: fit-content;
+  .homeTopSection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    & > button {
+      transition: all 0.3s ease-in-out;
+      margin-block: 1rem;
+      margin-inline-end: 1rem;
+      &:hover{
+        &::after{
+          content: " + "
+        }
+      }
+    }
+  }
+}
+
+.homeCreateTodo {
+  & > h1 {
+    font: 700 2.5rem "Manrope", sans-serif;
+  }
+}
+
+.homeFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-block: 1rem;
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    & > label {
+      font: 600 1.5rem "Manrope", sans-serif;
+    }
+    & > input {
+      font: 400 1.5rem "Manrope", sans-serif;
+      padding: 0.5rem;
+      border: 2px solid #000;
+      border-radius: 0.5rem;
+      box-shadow: 5px 5px 0px var(--box-border-color);
+      outline: none;
+    }
+    & > textarea {
+      font: 400 1.5rem "Manrope", sans-serif;
+      padding: 0.5rem;
+      border: 2px solid #000;
+      border-radius: 0.5rem;
+      box-shadow: 5px 5px 0px var(--box-border-color);
+      outline: none;
+      min-height: auto;
+      resize: none; 
+    }
+  }
+}
+
+.checkboxContainer {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 2rem !important;
+  & > input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.selectTabContainer {
+  & > select {
+    font: 400 1.5rem "Manrope", sans-serif;
+    padding: 0.5rem;
+    border: 2px solid var(--box-border-color);
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 5px 5px 0px var(--box-border-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    & > option {
+      &:hover {
+        background-color: var(--box-border-color);
+        color: #fff;
+      }
+    }
+  }
+}
+
+.error {
+  font: 400 1.5rem "Manrope", sans-serif;
+  color: red;
+}
+
+.createBtn {
+  margin-top: 20px;
+  font: 600 1.5rem "Manrope", sans-serif;
+  padding: 0.5rem;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid var(--box-border-color);
+    box-shadow: 5px 5px 0px var(--box-border-color);
+  }
+}
+
+.homeTodoSection{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.todoCard{
+  border: 2px solid var(--box-border-color);
+  border-radius: 5px;
+  box-shadow: 5px 5px 0px var(--box-border-color);
+  background-color: var(--box-background-color);
+  width: clamp(300px, 90%, 600px);
+  height: 350px;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .mainInfo{
+    & > h1 {
+      font: 700 2rem "Manrope", sans-serif;
+    }
+    & > p {
+      max-height: calc(350px - 120px);
+      overflow-y: auto;
+      font: 400 1.5rem "Manrope", sans-serif;
+    }  
+  }
+  .todoCardBottom{
+    & > div {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 1rem;
+      & > p {
+        font: 600 0.9rem "Manrope", sans-serif;
+      }
+    }
+  }
+}

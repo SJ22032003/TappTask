@@ -1,0 +1,26 @@
+{
+  "name": "bun-node-js",
+  "module": "server.ts",
+  "scripts": {
+    "start": "node server.js",
+    "server": "NODE_ENV=dev nodemon server.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "ts-node": "^10.4.0",
+    "nodemon": "^2.0.22"
+  },
+  "peerDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.1",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.4.3"
+  }
+}
