@@ -22,3 +22,13 @@ You need to have BUN installed to run both client and BE.
 
 ## Conclusion
 Might contains bugs and errors, because its in early development. And is not ready for production use.
+
+## Insides
+
+![Screenshot from 2023-08-18 12-20-11](https://github.com/SJ22032003/TappTask/assets/85823986/eac1c41e-7a4d-409c-a175-c78c5db5d04f)
+![Screenshot from 2023-08-18 12-20-16](https://github.com/SJ22032003/TappTask/assets/85823986/13c32933-1cd6-4d5c-ad0d-175f67450659)
+![Screenshot from 2023-08-18 12-20-24](https://github.com/SJ22032003/TappTask/assets/85823986/e5b8e69a-c9f4-497e-8c0f-c43e43012a7a)
+![Screenshot from 2023-08-18 12-20-56](https://github.com/SJ22032003/TappTask/assets/85823986/615a9c57-8913-41e7-b121-ada804d7b338)
+![Screenshot from 2023-08-18 12-21-01](https://github.com/SJ22032003/TappTask/assets/85823986/4710fbbb-324c-42c1-9f29-a597ac5865d2)
+![Screenshot from 2023-08-18 12-21-04](https://github.com/SJ22032003/TappTask/assets/85823986/f69e13ef-1202-42cd-9f4d-c3b414794fdd)
+
