@@ -19,6 +19,7 @@ And mongo for the database.
 ## Running the Code
 Its very important to know that both backend and client are running using BUN.js as a runtime for SSR and backend work. Bun is in early development and is not ready for production use. And may not work as indentended.
 You need to have BUN installed to run both client and BE.
+-- file names are interchanged :( --
 
 ## Conclusion
 Might contains bugs and errors, because its in early development. And is not ready for production use.
